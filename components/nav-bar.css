@@ -1,0 +1,35 @@
+header{
+    background-color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.header-title{
+    display: flex;
+    align-items: center;
+}
+.header-title i{
+    font-size: 52px;
+    margin-left: 34px;
+    margin-right: 22px;
+}
+.header-title__text{
+    font-size: 42px;
+    font-family: 'DynaPuff', cursive;
+    font-weight: 500;
+
+}
+
+.header-list{
+    list-style: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
