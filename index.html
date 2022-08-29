@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheduler</title>
+    <!-- google font -->
     <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
@@ -16,13 +17,39 @@
             <h1 class="header-title__text">Schedule</h1>
         </div>
         <ul class="header-list">
-            <a href="#">일정</a>
-            <a href="#">ToDo</a>
+            <a href="index.html">일정</a>
             <a href="#">일기</a>
-            <a href="#">날씨</a>
+            <a href="#">ToDo</a>
+            <a href="#">버킷 리스트</a>
         </ul>
     </header>
 
+    <article>
+        <div class="calendar">
+            <div class="header">
+                <div class="year-month"></div>
+                <div class="nav">
+                    <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                    <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                    <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="days">
+                    <div class="day">일</div>
+                    <div class="day">월</div>
+                    <div class="day">화</div>
+                    <div class="day">수</div>
+                    <div class="day">목</div>
+                    <div class="day">금</div>
+                    <div class="day">토</div>
+                </div>
+                <div class="dates"></div>
+            </div>
+        </div>
+    </article>
+
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/1f00eb3b45.js" crossorigin="anonymous"></script>
 </body>
 </html>

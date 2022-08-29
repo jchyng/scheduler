@@ -4,6 +4,9 @@ header{
     align-items: center;
     justify-content: space-between;
     color: white;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
 }
 .header-title{
     display: flex;
@@ -25,7 +28,7 @@ header{
     list-style: none;
     width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .header-list a{
     text-decoration: none;
