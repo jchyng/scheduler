@@ -1,13 +1,16 @@
 article{
+    margin-top: 107px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .calendar {
-    width: 600px;
-    margin: 50px;
+    width: 800px;
+    padding: 70px;
+    border: 1px solid #333333;
+    position: relative;
 }
 
 .header {
@@ -31,7 +34,7 @@ article{
     border: none;
     font-size: 16px;
     line-height: 34px;
-    background-color: transparent;
+    background-color: transparent;  /*배경색 없음*/
     cursor: pointer;
     font-family: sans-serif;
 }
@@ -46,14 +49,14 @@ article{
     margin: 25px 0 10px;
 }
 .day{
-    width: calc(100% / 7);
+    width: calc(100% / 7);  /*calculation 계산결과가 값*/
     text-align: center;
 }
 
 .dates {
     display: flex;
-    flex-flow: row wrap;
-    height: 500px;
+    flex-flow: row wrap;    /*범위를 넘어서면 다음 줄로*/
+    height: 650px;
     border-top: 1px solid #333333;
     border-right: 1px solid #333333;
 }
@@ -66,7 +69,10 @@ article{
     border-left: 1px solid #333333;
     box-sizing: border-box;
 }
-
+.date:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
 .day:nth-child(7n + 1),
 .date:nth-child(7n + 1){
     color: #d13e3e;
@@ -98,4 +104,29 @@ article{
     background-color: #FF0000;
     border-radius: 50%;
     content: '';
+}
+
+.schedule{
+    width: 400px;
+    height: 500px;
+    border: var(--border);
+    background-color: var(--lightBeige);
+    position: absolute;
+    top: 27%;
+    left: 28%;
+}
+
+.schedule-bar{
+    height: 25px;
+    background-color: #828282;
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+}
+.exit-btn{
+    border: none;
+    background: none;
+}
+.exit-btn:hover{
+    cursor: pointer;
 }

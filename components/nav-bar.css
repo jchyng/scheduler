@@ -5,6 +5,7 @@ header{
     justify-content: space-between;
     color: white;
     position: fixed;
+    top: 0;
     box-sizing: border-box;
     width: 100%;
 }
